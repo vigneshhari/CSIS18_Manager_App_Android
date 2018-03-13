@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zentech.csis18manager.EnterId">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Enter CSIS ID"
+        android:textSize="100px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/id_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="144dp"
+        android:ems="10"
+        android:inputType="number"
+        materialdesign:layout_constraintEnd_toEndOf="parent"
+        materialdesign:layout_constraintStart_toStartOf="parent"
+        materialdesign:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.gc.materialdesign.views.ButtonFloat
+        android:id="@+id/bf_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#00e676"
+        materialdesign:animate="false"
+        materialdesign:iconDrawable="@drawable/ic_checked"
+        materialdesign:layout_constraintBottom_toBottomOf="parent"
+        materialdesign:layout_constraintEnd_toEndOf="parent"
+        materialdesign:layout_constraintStart_toStartOf="parent"
+        materialdesign:layout_constraintTop_toBottomOf="@+id/editText"
+        materialdesign:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>
