@@ -160,7 +160,7 @@ public class EnterId extends AppCompatActivity {
                 }
                 else if (choice.equals("atdet")) {
                     Intent i = new Intent(getApplicationContext() , deldet.class);
-                    i.putExtra("id" , ed.getText());
+                    i.putExtra("id" ,  ed.getText().toString());
                     startActivity(i);
                     finish();
                 }
